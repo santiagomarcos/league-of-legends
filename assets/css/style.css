@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    overflow-y: hidden;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+}
+main #banner{
+    width: 70%;
+    height: 100vh;
+    background:url('../image/banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+main #banner .fa-cog{
+    position: absolute;
+    bottom: 40px;
+    right: 30px;
+    background-color: rgb(105, 105, 105);
+    padding: 10px;
+    border-radius:5px;
+    color: #fff;
+    cursor: pointer;
+}
+main #banner .fa-info{
+    background-color: rgb(173, 69, 138);
+    padding: 10px 15px;
+    border-radius:50%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+}
+main #login{
+    background-color: rgb(245, 245, 245);
+    width: 30%;
+    height: 100vh;
+    padding: 50px;
+    position: relative;
+}
+main #login input:checked{
+    background-color: red;
+    border-radius: 5px;
+}
+main #login article h2{
+    margin: 75px 0px 20px 0px;
+    text-align: center;
+}
+main #login article img{
+    width: 40px;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+main #login article input{
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    height: 50px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    background-color: rgb(235, 235, 235);
+    text-transform: uppercase;
+}
+label.checkbox input[type="checkbox"] {
+    display:none;
+}
+label.checkbox{
+    font-weight: 600;
+    font-size: 14px;
+    color: rgb(148, 148, 148);
+}
+label.checkbox span {
+  display:inline-block;
+  border-radius:5px;
+  border: none;
+  width:20px;
+  height:20px;
+  background:#ddd;
+  vertical-align:middle;
+  margin:3px;
+  position: relative;
+}
+label.checkbox :checked + span {
+  background:rgb(180, 15, 15);
+  width:20px;
+  height:20px;
+}
+label.checkbox :checked + span:after {
+  content: '\2714';
+  font-size: 16px;
+  position: absolute;
+  top: -1px;
+  left: 4px;
+  color: #fff;
+}
+main #login article #redes-sociais{
+    margin-bottom: 10px;
+    width: 100%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+main #login article #redes-sociais #facebook{
+    background-color: blue;
+    border: none;
+    color: #fff;
+    flex-grow: 1;
+    border-radius: 5px;
+    height: 100%;
+    margin-right:10px;
+    cursor: pointer;
+}
+main #login article #redes-sociais #google{
+    background-color: #fff;
+    border: none;
+    color: #000;
+    flex-grow: 1;
+    border-radius: 5px;
+    height: 100%;
+    margin-right:10px;
+    cursor: pointer;
+}
+main #login article #redes-sociais #apple{
+    background-color: #000;
+    border: none;
+    color: #fff;
+    flex-grow: 1;
+    border-radius: 5px;
+    height: 100%;
+    margin-right:10px;
+    cursor: pointer;
+}
+main #login #conta{
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+main #login #conta button{
+    background-color: transparent;
+    border: 2px solid rgb(209, 209, 209);
+    color: rgb(209, 209, 209);
+    font-size: 28px;
+    border-radius: 20px;
+    padding: 15px 20px;
+    margin-bottom: 50px;
+}
+main #login #conta button:hover{
+    cursor: pointer;
+    border: none;
+    border: 2px solid rgb(180, 15, 15);
+    color: #fff;
+    background-color: rgb(180, 15, 15);
+}
+main #login #conta h3{
+    color: rgb(170, 170, 170);
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+@media screen and (max-width: 1150px){
+    main #banner{
+        display: none;
+    }
+    main #login{
+        width: 100%;
+        height: 100vh;
+        padding: 20px 150px;
+    }
+}
+@media screen and (max-width: 700px){
+     main #login{
+        padding: 20px 50px;
+    }
+}
